@@ -25,58 +25,81 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?>>
 
-<div class="hfeed site" id="page">
+<main class="hfeed site" id="page">
 
-	<!-- ******************* The Navbar Area ******************* -->
-	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
+	<header id="wrapper-navbar">
 
-		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
-		'understrap' ); ?></a>
-
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-
-		<?php if ( 'container' == $container ) : ?>
+		<div class="top-header">
 			<div class="container">
-		<?php endif; ?>
 
-					<!-- Your site title as branding in the menu -->
-					<?php if ( ! has_custom_logo() ) { ?>
+				<!-- Top Header -->
+				<div class="top-header--inner">
+					<p>
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<span>info@sangiorgello.it</span>
+					</p>
 
-						<?php if ( is_front_page() && is_home() ) : ?>
+					<p>
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<a href="tel">+39 0573.100004</a>
+					</p>
 
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-							
-						<?php else : ?>
+					<ul class="social-list">
+						<li>
+							<a href=""><i class="fa fa-facebook"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="fa fa-instagram"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="fa fa-youtube"></i></a>
+						</li>
+					</ul>
+				</div><!-- //Top Header -->
+			</div>
+		</div>
 
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-						
-						<?php endif; ?>
-						
-					
-					<?php } else {
-						the_custom_logo();
-					} ?><!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<!-- Main Header -->
+		<div class="container main-header">
+			<nav class="navbar navbar-toggleable-md">
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" 
+					data-target="#mainHeader" aria-controls="mainHeader" 
+					aria-expanded="false" aria-label="Toggle navigation" style="background:red">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'walker'          => new WP_Bootstrap_Navwalker(),
-					)
-				); ?>
-			<?php if ( 'container' == $container ) : ?>
-			</div><!-- .container -->
-			<?php endif; ?>
+				<figure class="navbar-brand">
+					<img src="" alt="Sangiorgello">
+					<h1></h1>
+				</figure>
 
-		</nav><!-- .site-navigation -->
+				<div class="collapse navbar-collapse" id="mainHeader">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a href="">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="">Chi siamo</a>
+						</li>
+						<li class="nav-item">
+							<a href="">Campi estivi</a>
+						</li>
+						<li class="nav-item">
+							<a href="">Animatori</a>
+						</li>
+						<li class="nav-item">
+							<a href="">Galleria</a>
+						</li>
+						<li class="nav-item">
+							<a href="">Contatti</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 
-	</div><!-- .wrapper-navbar end -->
+		</div><!-- //Main Header -->
+		
+	</header>
+
