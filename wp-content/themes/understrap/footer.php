@@ -11,45 +11,103 @@ $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php get_sidebar( 'footerfull' ); ?>
-
-<div class="wrapper" id="wrapper-footer">
-
-	<div class="<?php echo esc_attr( $container ); ?>">
-
+<!-- Wrapper Contact Us -->
+<section class="wrapper" id="wrapper-contact-us">
+	<div class="container">
 		<div class="row">
 
-			<div class="col-md-12">
+			<div>
+				<h4>Ti interessano le nostre attività?</h4>
+				<p>
+					Scrivici per chiedere qualsiasi info tanto non ti rispondiamo
+				</p>
+			</div>
 
-				<footer class="site-footer" id="colophon">
+			<a href="" class="btn">Scrivici</a>			
 
-					<div class="site-info">
+		</div>
+	</div>
+</section><!-- //Wrapper Contact Us -->
 
-							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
-							/* translators:*/
-							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
-								<span class="sep"> | </span>
-					
-							<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 
-				
-							(<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
-					</div><!-- .site-info -->
+<footer>
 
-				</footer><!-- #colophon -->
+	<!-- Main Footer -->
+	<div class="main-footer">
+		<div class="container">
+			<div class="row">
+				<figure class="">
+					<img src="" alt="">
+				</figure>
 
-			</div><!--col end -->
+				<div class="">
+					<h4>Contatti</h4>
+					<span>
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<a href="">+39 0573 400001</a>
+					</span>
+					<span>
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						info@sangiorgello.it
+					</span>
+				</div>
 
-		</div><!-- row end -->
+				<div>
+					<h4>Menu</h4>
+					<ul>
+						<li>
+							<a href="">Home</a>
+						</li>
 
-	</div><!-- container end -->
+						<li>
+							<a href="">Chi Siamo</a>
+						</li>
 
-</div><!-- wrapper end -->
+						<li>
+							<a href="">Campi Estivi</a>
+						</li>
 
-</main><!-- #page we need this extra closing tag here -->
+						<li>
+							<a href="">Animatori</a>
+						</li>
+
+						<li>
+							<a href="">Galleria</a>
+						</li>
+
+						<li>
+							<a href="">Contatti</a>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<h4>Seguici</h4>
+					<a href="">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						Gruppo Giovani Sangiorgello
+					</a>
+
+					<a href="">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						Sangiorgello
+					</a>
+
+					<a href="">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						Gruppo Giovani Sangiorgello
+					</a>
+				</div>
+			</div>
+		</div>
+	</div><!-- //Main Footer -->
+
+	<!-- Sub Footer -->
+	<div class="sub-footer">
+		copyright SGG 2017. All Rights Reserved.
+	</div>
+</footer>
+
+</main>
 
 <?php wp_footer(); ?>
 
