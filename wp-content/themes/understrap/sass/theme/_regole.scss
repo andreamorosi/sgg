@@ -1,0 +1,71 @@
+/* Colori */
+.bianco {
+    color: $bianco;
+}
+.giallo {
+    color: $giallo;
+}
+.blu {
+    color: $blu;
+}
+.rosso {
+    color: $rosso;
+}
+/* //Colori */
+
+/* Margini */
+.margin-l-auto {
+    margin-left: auto!important;
+}
+.margin-r-auto {
+    margin-right: auto!important;
+}
+.margin-b-none {
+    margin-bottom: 0;
+}
+.margin-v-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.margin-o-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.margin-o-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* //Margini */
+
+/* Pulsanti */
+.btn {
+    background: $giallo;
+    padding: 0.8rem 2.8rem;
+    border-radius: 2.8rem;
+    color: $bianco;
+    text-transform: uppercase;
+}
+/* //Pulsanti */
+
+/* Tipografia */
+p {
+    font-size: 1.2rem;
+}
+/* //Tipografia */
+
+/* Elementi */
+.titolo {
+    font-size: 2rem;
+}
+.pre-titolo {
+    font-size: 1.4rem;
+    &:after, &:before {
+        content: "-";
+        margin: 0 0.5rem;
+    }
+}
+.wrapper-title {
+    margin: 0 auto;
+    text-align: center;
+}
+/* //Elementi */

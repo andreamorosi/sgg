@@ -1,1 +1,169 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+.header-wrapper {
+
+    .top-header {
+        background: $blu;
+        color: $bianco;
+
+        .top-header--inner {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+
+    .social-list {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+
+        li {
+            padding: 0.6rem 0.8rem;
+            line-height: 1;
+
+            a {
+                i {
+                    color: $bianco;
+                    font-size: 1.5rem;
+                }
+            }
+
+            &:nth-child(1) {
+                background: $verde;
+            }
+            &:nth-child(2) {
+                background: $giallo;
+            }
+            &:nth-child(3) {
+                background: $rosso;
+            }
+        }
+    }
+}
+
+.hero-wrapper {
+    .carousel-caption {
+        top: 10%;
+        right: unset;
+        text-align: left;
+        left: 10%;
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 1rem 0 2rem;
+        }
+    }
+}
+
+.after-hero {
+    margin-top: -12rem;
+}
+
+.wrapper-trio {
+    .trio-obj {
+        color: $bianco;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 2.5rem 2rem 2rem;
+
+        &:nth-child(1) {
+            background: $giallo;
+
+            .trio-obj--icon {
+                background: $giallo;
+            }
+        }
+
+        &:nth-child(2) {
+            background: $rosso;
+
+            .trio-obj--icon {
+                background: $rosso;
+            }
+        }
+
+        &:nth-child(3) {
+            background: $verde;
+
+            .trio-obj--icon {
+                background: $verde;
+            }
+        }
+
+        .trio-obj--icon {
+            position: absolute;
+            top: -3rem;
+            padding: 2rem;
+            border-radius: 50%;
+
+        }
+
+        .trio-obj--descr {
+            text-align: center;
+            margin: 1rem 0 2rem;
+        }
+    }
+}
+
+.wrapper-info {
+    h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin: 1rem 0 2rem;
+    }
+}
+
+.card {
+    background: $grigio;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    flex: 1 0;
+    margin: 2rem 0.5rem;
+    width: calc(33.33% - 1rem);
+
+    figure {
+        height: 250px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    h2 {
+        margin: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    p {
+        margin: 0 2rem 1rem;
+    }
+
+    .card--footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        > * {
+            flex: 1 0 50%;
+            text-align: center;
+            padding: 1rem;
+            color: $bianco;
+        }
+
+        a {
+            background: $giallo;
+        }
+    }
+}

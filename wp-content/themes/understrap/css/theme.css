@@ -9416,6 +9416,115 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+.header-wrapper .top-header {
+  background: #1d70b7;
+  color: #fff; }
+  .header-wrapper .top-header .top-header--inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+.header-wrapper .social-list {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none; }
+  .header-wrapper .social-list li {
+    padding: 0.6rem 0.8rem;
+    line-height: 1; }
+    .header-wrapper .social-list li a i {
+      color: #fff;
+      font-size: 1.5rem; }
+    .header-wrapper .social-list li:nth-child(1) {
+      background: #21b8ba; }
+    .header-wrapper .social-list li:nth-child(2) {
+      background: #f4c631; }
+    .header-wrapper .social-list li:nth-child(3) {
+      background: #ed3b54; }
+
+.hero-wrapper .carousel-caption {
+  top: 10%;
+  right: unset;
+  text-align: left;
+  left: 10%; }
+  .hero-wrapper .carousel-caption h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0 2rem; }
+
+.after-hero {
+  margin-top: -12rem; }
+
+.wrapper-trio .trio-obj {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2.5rem 2rem 2rem; }
+  .wrapper-trio .trio-obj:nth-child(1) {
+    background: #f4c631; }
+    .wrapper-trio .trio-obj:nth-child(1) .trio-obj--icon {
+      background: #f4c631; }
+  .wrapper-trio .trio-obj:nth-child(2) {
+    background: #ed3b54; }
+    .wrapper-trio .trio-obj:nth-child(2) .trio-obj--icon {
+      background: #ed3b54; }
+  .wrapper-trio .trio-obj:nth-child(3) {
+    background: #21b8ba; }
+    .wrapper-trio .trio-obj:nth-child(3) .trio-obj--icon {
+      background: #21b8ba; }
+  .wrapper-trio .trio-obj .trio-obj--icon {
+    position: absolute;
+    top: -3rem;
+    padding: 2rem;
+    border-radius: 50%; }
+  .wrapper-trio .trio-obj .trio-obj--descr {
+    text-align: center;
+    margin: 1rem 0 2rem; }
+
+.wrapper-info h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 1rem 0 2rem; }
+
+.card {
+  background: #e7e8e9;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  flex: 1 0;
+  margin: 2rem 0.5rem;
+  width: calc(33.33% - 1rem); }
+  .card figure {
+    height: 250px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .card h2 {
+    margin: 1rem 2rem;
+    font-size: 1.6rem; }
+  .card p {
+    margin: 0 2rem 1rem; }
+  .card .card--footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .card .card--footer > * {
+      flex: 1 0 50%;
+      text-align: center;
+      padding: 1rem;
+      color: #fff; }
+    .card .card--footer a {
+      background: #f4c631; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
@@ -9439,3 +9548,70 @@ a.skip-link {
   .wpcf7 .wpcf7-validation-errors {
     color: #dc3545;
     border: 1px solid #e9ecef; }
+
+/* Colori */
+.bianco {
+  color: #fff; }
+
+.giallo {
+  color: #f4c631; }
+
+.blu {
+  color: #1d70b7; }
+
+.rosso {
+  color: #ed3b54; }
+
+/* //Colori */
+/* Margini */
+.margin-l-auto {
+  margin-left: auto !important; }
+
+.margin-r-auto {
+  margin-right: auto !important; }
+
+.margin-b-none {
+  margin-bottom: 0; }
+
+.margin-v-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.margin-o-1 {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.margin-o-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+/* //Margini */
+/* Pulsanti */
+.btn, .wpcf7 input[type=submit] {
+  background: #f4c631;
+  padding: 0.8rem 2.8rem;
+  border-radius: 2.8rem;
+  color: #fff;
+  text-transform: uppercase; }
+
+/* //Pulsanti */
+/* Tipografia */
+p {
+  font-size: 1.2rem; }
+
+/* //Tipografia */
+/* Elementi */
+.titolo {
+  font-size: 2rem; }
+
+.pre-titolo {
+  font-size: 1.4rem; }
+  .pre-titolo:after, .pre-titolo:before {
+    content: "-";
+    margin: 0 0.5rem; }
+
+.wrapper-title {
+  margin: 0 auto;
+  text-align: center; }
+
+/* //Elementi */

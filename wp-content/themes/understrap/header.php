@@ -25,81 +25,82 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?>>
 
-<main class="hfeed site" id="page">
 
-	<header id="wrapper-navbar">
 
-		<div class="top-header">
-			<div class="container">
+<header id="wrapper-navbar" class="header-wrapper">
 
-				<!-- Top Header -->
-				<div class="top-header--inner">
-					<p>
-						<i class="fa fa-envelope-o" aria-hidden="true"></i>
-						<span>info@sangiorgello.it</span>
-					</p>
+	<div class="top-header">
+		<div class="container">
 
-					<p>
-						<i class="fa fa-phone" aria-hidden="true"></i>
-						<a href="tel">+39 0573.100004</a>
-					</p>
+			<!-- Top Header -->
+			<div class="top-header--inner">
+				<p class="margin-b-none margin-o-1">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<span class="giallo">info@sangiorgello.it</span>
+				</p>
 
-					<ul class="social-list">
-						<li>
-							<a href=""><i class="fa fa-facebook"></i></a>
-						</li>
-						<li>
-							<a href=""><i class="fa fa-instagram"></i></a>
-						</li>
-						<li>
-							<a href=""><i class="fa fa-youtube"></i></a>
-						</li>
-					</ul>
-				</div><!-- //Top Header -->
-			</div>
+				<p class="margin-b-none margin-o-1 margin-r-auto">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<a href="tel" class="giallo">+39 0573.100004</a>
+				</p>
+
+				<ul class="social-list">
+					<li>
+						<a href=""><i class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-youtube"></i></a>
+					</li>
+				</ul>
+			</div><!-- //Top Header -->
 		</div>
+	</div>
 
 
-		<!-- Main Header -->
-		<div class="container main-header">
-			<nav class="navbar navbar-toggleable-md">
-				
-				<button class="navbar-toggler" type="button" data-toggle="collapse" 
-					data-target="#mainHeader" aria-controls="mainHeader" 
-					aria-expanded="false" aria-label="Toggle navigation" style="background:red">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+	<!-- Main Header -->
+	<div class="container main-header">
+		<nav class="navbar navbar-toggleable-md">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+				data-target="#mainHeader" aria-controls="mainHeader" 
+				aria-expanded="false" aria-label="Toggle navigation" style="background:red">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-				<figure class="navbar-brand">
-					<img src="" alt="Sangiorgello">
-					<h1></h1>
-				</figure>
+			<figure class="navbar-brand">
+				<img src="" alt="Sangiorgello">
+			</figure>
 
-				<div class="collapse navbar-collapse" id="mainHeader">
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a href="">Home</a>
-						</li>
-						<li class="nav-item">
-							<a href="">Chi siamo</a>
-						</li>
-						<li class="nav-item">
-							<a href="">Campi estivi</a>
-						</li>
-						<li class="nav-item">
-							<a href="">Animatori</a>
-						</li>
-						<li class="nav-item">
-							<a href="">Galleria</a>
-						</li>
-						<li class="nav-item">
-							<a href="">Contatti</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-
-		</div><!-- //Main Header -->
+			<div class="collapse navbar-collapse" id="mainHeader">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a href="">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="">Chi siamo</a>
+					</li>
+					<li class="nav-item">
+						<a href="">Campi estivi</a>
+					</li>
+					<li class="nav-item">
+						<a href="">Animatori</a>
+					</li>
+					<li class="nav-item">
+						<a href="">Galleria</a>
+					</li>
+					<li class="nav-item">
+						<a href="">Contatti</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		
-	</header>
 
+	</div><!-- //Main Header -->
+	
+</header>
+
+<main class="hfeed site" id="page">
