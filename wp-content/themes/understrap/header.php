@@ -27,20 +27,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 
-<header id="wrapper-navbar" class="header-wrapper">
+<header id="wrapper-header" class="header-wrapper">
 
 	<div class="top-header">
 		<div class="container">
 
 			<!-- Top Header -->
 			<div class="top-header--inner">
-				<p class="margin-b-none margin-o-1">
-					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				<p class="top-header--inner-p margin-b-none margin-o-1 f-s-s">
+					<i class="fa fa-envelope-o f-s-l" aria-hidden="true"></i>
 					<span class="giallo">info@sangiorgello.it</span>
 				</p>
 
-				<p class="margin-b-none margin-o-1 margin-r-auto">
-					<i class="fa fa-phone" aria-hidden="true"></i>
+				<p class="top-header--inner-p margin-b-none margin-o-1 margin-r-auto f-s-s">
+					<i class="fa fa-phone f-s-l" aria-hidden="true"></i>
 					<a href="tel" class="giallo">+39 0573.100004</a>
 				</p>
 
@@ -61,8 +61,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 	<!-- Main Header -->
-	<div class="container main-header">
-		<nav class="navbar navbar-toggleable-md">
+	<div id="wrapper-navbar" class="container main-header">
+		<nav class="navbar navbar-expand-md navbar-toggleable-md">
 			
 			<button class="navbar-toggler" type="button" data-toggle="collapse" 
 				data-target="#mainHeader" aria-controls="mainHeader" 
@@ -71,7 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</button>
 
 			<figure class="navbar-brand">
-				<img src="" alt="Sangiorgello">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Sangiorgello">
 			</figure>
 
 			<div class="collapse navbar-collapse" id="mainHeader">
