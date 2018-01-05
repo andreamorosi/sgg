@@ -23,36 +23,25 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 <!-- Wrapper Hero -->
 <section class="wrapper hero-wrapper" id="wrapper-hero">
+	<div class="owl-carousel hero-carousel">
 
-	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner" role="listbox">
-			<div class="carousel-item active">
-				<img class="d-block img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
-				<div class="carousel-caption d-none d-md-block">
-					<span class="titolo giallo">Campi Estivi</span>
-					<h3>Campo Superiori 2016 <br>Il Re Leone</h3>
-					<a href="" class="btn">Scopri</a>
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<img class="d-block img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="Second slide">
-			</div>
-
-			<div class="carousel-item">
-				<img class="d-block img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="Third slide">
+		<div class="hero-carousel--item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);">
+			<div class="hero-carousel--item--info">
+				<span class="titolo giallo">Campi Estivi</span>
+				<h3 class="bianco">Campo Superiori 2016 <br>Il Re Leone</h3>
+				<a href="" class="btn">Scopri</a>
 			</div>
 		</div>
 
-		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
+		<div class="hero-carousel--item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);">
+			<div class="hero-carousel--item--info">
+				<span class="titolo giallo">Campi Estivi</span>
+				<h3 class="bianco">Campo Medie 2016 <br>Il Re Leone</h3>
+				<a href="" class="btn">Scopri</a>
+			</div>
+		</div>
 	</div>
+
 
 </section><!-- //Wrapper Hero -->
 
@@ -68,7 +57,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 					Assumenda numquam necessitatibus dolorum libero expedita natus earum. 
 					Architecto, cupiditate! Beatae, neque.
 				</p>
-				<a href="" class="btn">Scopri</a>
+				<a href="" class="btn rosso bordo">Scopri</a>
 			</div>
 
 			<div class="col-md-4 col-sm-12 trio-obj">
@@ -79,7 +68,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 					Assumenda numquam necessitatibus dolorum libero expedita natus earum. 
 					Architecto, cupiditate! Beatae, neque.
 				</p>
-				<a href="" class="btn">Scopri</a>
+				<a href="" class="btn verde bordo">Scopri</a>
 			</div>
 
 			<div class="col-md-4 col-sm-12 trio-obj">
@@ -90,7 +79,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 					Assumenda numquam necessitatibus dolorum libero expedita natus earum. 
 					Architecto, cupiditate! Beatae, neque.
 				</p>
-				<a href="" class="btn">Scopri</a>
+				<a href="" class="btn bordo">Scopri</a>
 			</div>
 		</div>
 	</div>
@@ -135,104 +124,119 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row cards-wrapper">
 			<article class="card">
 				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
-				<h2>
-					Campo Elementari
-				</h2>
+				<header>
+					<h2 class="blu">Campo Elementari</h2>
+				</header>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
 				<div class="card--footer">
-					<span>7-11 anni</span>
+					<span class="blu">7-11 anni</span>
 					<a href="">Iscriviti</a>
 				</div>
 			</article>
 			<article class="card">
 				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
-				<h2>
-					Campo Elementari
-				</h2>
+				<header>
+					<h2 class="verde">Campo Medie</h2>
+				</header>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
 				<div class="card--footer">
-					<span>7-11 anni</span>
+					<span class="verde">7-11 anni</span>
 					<a href="">Iscriviti</a>
 				</div>
 			</article>
 			<article class="card">
 				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
-				<h2>
-					Campo Elementari
-				</h2>
+				<header>
+					<h2 class="rosso">Campo Superiori</h2>
+				</header>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
 				<div class="card--footer">
-					<span>7-11 anni</span>
+					<span class="rosso">7-11 anni</span>
 					<a href="">Iscriviti</a>
 				</div>
 			</article>
 		</div>
 
 		<div class="row">
-			<a class="btn margin-o-auto" href="">Tutti i campi</a>
+			<a class="btn margin-o-auto rosso" href="">Tutti i campi</a>
 		</div>
 	</div>
 </section><!-- //Wrapper Activities -->
 
 <!-- Wrapper Faces -->
-<section class="wrapper" id="wrapper-faces">
-	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner" role="listbox">
-			<div class="carousel-item face-wrapper active">
-				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
-				</figure>
-				
-				<div class="face-wrapper--descr">
-					<h5>Jonny</h5>
-					<p>25 anni</p>
-				</div>
-			</div>
-
-			<div class="carousel-item face-wrapper">
-				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
-				</figure>
-				
-				<div class="face-wrapper--descr">
-					<h5>Jonny</h5>
-					<p>25 anni</p>
-				</div>
-			</div>
-
-			<div class="carousel-item face-wrapper">
-				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
-				</figure>
-				
-				<div class="face-wrapper--descr">
-					<h5>Jonny</h5>
-					<p>25 anni</p>
-				</div>
+<section class="wrapper bg-giallo" id="wrapper-faces">
+	<div class="container">
+		<div class="row">
+			<div class="wrapper-title">
+				<span>Animatori</span>
+				<h3 class="rosso">Scopriamo i volti</h3>
 			</div>
 		</div>
+		<div class="owl-carousel scopri-carousel">
+			<div class="face-wrapper">
+				<figure class="face-wrapper--pic">
+					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
+				</figure>
+				
+				<div class="face-wrapper--descr">
+					<h5>Jonny</h5>
+					<p>25 anni</p>
+				</div>
+			</div>	
 
-		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
+			<div class="face-wrapper">
+				<figure class="face-wrapper--pic">
+					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
+				</figure>
+				
+				<div class="face-wrapper--descr">
+					<h5>Jonny</h5>
+					<p>25 anni</p>
+				</div>
+			</div>
+
+			<div class="face-wrapper">
+				<figure class="face-wrapper--pic">
+					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
+				</figure>
+				
+				<div class="face-wrapper--descr">
+					<h5>Jonny</h5>
+					<p>25 anni</p>
+				</div>
+			</div>
+
+			<div class="face-wrapper">
+				<figure class="face-wrapper--pic">
+					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
+				</figure>
+				
+				<div class="face-wrapper--descr">
+					<h5>Jonny</h5>
+					<p>25 anni</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<a href="" class="btn margin-o-auto rosso bordo">Scopri tutti</a>
+		</div>
+		
 	</div>
+	
 </section><!-- //Wrapper Faces -->
 
 <!-- Wrapper Gallery -->
@@ -241,18 +245,27 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 		<div class="row">
 			<div class="wrapper-title">
 				<span>Galleria</span>
-				<h3>I nostri momenti</h3>
+				<h3 class="verde">I nostri momenti</h3>
 			</div>
 		</div>
 
-		<div class="row">
-			<!-- TODO: WP Slider or OwlCarousel here -->
+		<div class="owl-carousel galleria-carousel">
+		
+		<?php 
+		for($i=0;$i<9;$i++) {
+			?>
+			<figure class="galleria-item">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="">
+			</figure>
+			<?php
+		}
+		?>
 		</div>
 	</div>
 </section><!-- //Wrapper Gallery -->
 
 <!-- Wrapper Events -->
-<section class="wrapper" id="wrapper-events">
+<section class="wrapper bg-rosso" id="wrapper-events">
 	<div class="container">
 		<div class="row">
 			<div class="wrapper-title">
@@ -261,59 +274,52 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row cards-wrapper">
+			<article class="card col-md-4 col-sm-12">
+				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
 
-			<article class="col-md-4 col-sm-12">
-				<figure>
-					<img src="" alt="">
-				</figure>
-				<h2>
-					Festa Carnevale
-				</h2>
-				<span class="">26 feb</span>
+				<header>
+					<h2 class="blu">Festa Carnevale</h2>
+					<span class="giallo">26 feb</span>
+				</header>
+				
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
-				<div>
-					<span>15:00</span>
-					<span>Oggi</span>
+				<div class="card--footer">
+					<span class="blu">15:00</span>
+					<span class="giallo">Oggi</span>
 				</div>
 			</article>
-
-			<article class="col-md-4 col-sm-12">
-				<figure>
-					<img src="" alt="">
-				</figure>
-				<h2>
-					Festa Carnevale
-				</h2>
-				<span class="">26 feb</span>
+			<article class="card col-md-4 col-sm-12">
+				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
+				<header>
+					<h2 class="blu">Festa Carnevale</h2>
+					<span class="giallo">26 feb</span>
+				</header>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
-				<div>
-					<span>15:00</span>
-					<span>Oggi</span>
+				<div class="card--footer">
+					<span class="blu">15:00</span>
+					<span class="giallo">Oggi</span>
 				</div>
 			</article>
-
-			<article class="col-md-4 col-sm-12">
-				<figure>
-					<img src="" alt="">
-				</figure>
-				<h2>
-					Festa Carnevale
-				</h2>
-				<span class="">26 feb</span>
+			<article class="card col-md-4 col-sm-12">
+				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
+				<header>
+					<h2 class="blu">Festa Carnevale</h2>
+					<span class="giallo">26 feb</span>
+				</header>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
-				<div>
-					<span>15:00</span>
-					<span>Oggi</span>
+				<div class="card--footer">
+					<span class="blu">15:00</span>
+					<span class="giallo">Oggi</span>
 				</div>
 			</article>
 		</div>

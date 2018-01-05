@@ -66,7 +66,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			
 			<button class="navbar-toggler" type="button" data-toggle="collapse" 
 				data-target="#mainHeader" aria-controls="mainHeader" 
-				aria-expanded="false" aria-label="Toggle navigation" style="background:red">
+				aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -74,7 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Sangiorgello">
 			</figure>
 
-			<div class="collapse navbar-collapse" id="mainHeader">
+			<div class="collapse navbar-collapse main-header-core" id="mainHeader">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
 						<a href="">Home</a>

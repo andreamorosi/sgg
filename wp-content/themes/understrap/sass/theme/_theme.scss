@@ -1,33 +1,29 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 .header-wrapper {
-
     .top-header {
         background: $blu;
         color: $bianco;
-
+        @media (max-width: $mobile) {
+            display: none;
+        }
         .top-header--inner {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
         }
-
         .top-header--inner-p {
             display: flex;
             align-items: center;
             justify-content: center;
-
             i {
                 margin-right: 0.5rem;
             }
-
             a:hover {
                 color: $giallo;
             }
         }
-
     }
-
     .social-list {
         margin: 0;
         display: flex;
@@ -35,18 +31,15 @@
         justify-content: center;
         align-items: center;
         list-style-type: none;
-
         li {
             padding: 0.6rem 1rem;
             line-height: 1;
-
             a {
                 i {
                     color: $bianco;
                     font-size: 1.5rem;
                 }
             }
-
             &:nth-child(1) {
                 background: $verde;
             }
@@ -58,32 +51,32 @@
             }
         }
     }
-
     .navbar-nav {
         width: 100%;
         justify-content: space-around;
         align-items: center;
-
-        > li {
+        >li {
             padding: 0.75rem 1.5rem;
             border-radius: 3rem;
             transition: all ease 0.2s;
             white-space: nowrap;
             line-height: 1.5;
             cursor: pointer;
-
-            &.active, &:hover {
+            &.active,
+            &:hover {
                 background: $giallo;
-
                 a {
                     color: $bianco;
                 }
             }
-
             a {
                 color: $scuro;
                 font-weight: bold;
                 text-decoration: none;
+            }
+
+            @media (max-width: $mobile) {
+                margin: .5rem 0;
             }
         }
     }
@@ -95,7 +88,6 @@
         right: unset;
         text-align: left;
         left: 10%;
-
         h3 {
             font-size: 2.5rem;
             font-weight: bold;
@@ -106,6 +98,10 @@
 
 .after-hero {
     margin-top: -12rem;
+    @media (max-width: $mobile) {
+        margin-top: 0;
+        padding-top: 0;
+    }
 }
 
 .wrapper-trio {
@@ -117,39 +113,36 @@
         align-items: center;
         position: relative;
         padding: 2.5rem 2rem 2rem;
-
+        @media (max-width: $mobile) {
+            padding-bottom: 4rem;
+            &:last-child {
+                padding-bottom: 2rem;
+            }
+        }
         &:nth-child(1) {
             background: $giallo;
-
             .trio-obj--icon {
                 background: $giallo;
             }
         }
-
         &:nth-child(2) {
             background: $rosso;
-
             .trio-obj--icon {
                 background: $rosso;
             }
         }
-
         &:nth-child(3) {
             background: $verde;
-
             .trio-obj--icon {
                 background: $verde;
             }
         }
-
         .trio-obj--icon {
             position: absolute;
             top: -3rem;
             padding: 2rem;
             border-radius: 50%;
-
         }
-
         .trio-obj--descr {
             text-align: center;
             margin: 1rem 0 2rem;
@@ -174,7 +167,7 @@
     flex: 1 0;
     margin: 2rem 0.5rem;
     width: calc(33.33% - 1rem);
-
+    justify-content: space-between;
     figure {
         height: 250px;
         overflow: hidden;
@@ -182,31 +175,285 @@
         background-position: center center;
         background-repeat: no-repeat;
     }
-
     h2 {
-        margin: 1rem 2rem;
         font-size: 1.6rem;
     }
-
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2rem 1rem
+    }
     p {
         margin: 0 2rem 1rem;
     }
-
     .card--footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
-        > * {
+        >* {
             flex: 1 0 50%;
             text-align: center;
             padding: 1rem;
             color: $bianco;
         }
-
         a {
             background: $giallo;
         }
+        span {
+            &.blu {
+                background: $blu;
+                color: $bianco;
+            }
+            &.verde {
+                background: $verde;
+                color: $bianco;
+            }
+            &.rosso {
+                background: $rosso;
+                color: $bianco;
+            }
+            &.giallo {
+                background: $giallo;
+                color: $bianco;
+            }
+        }
+    }
+}
+
+.contact-foot-info {
+    flex: 1;
+}
+
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    margin-left: -20px;
+    display: block!important;
+    border: 0px solid black;
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right: -25px;
+    display: block!important;
+    border: 0px solid black;
+}
+
+.owl-prev i,
+.owl-next i {
+    color: $rosso;
+    font-size: 2.2rem;
+}
+
+.owl-dots {
+    transition: all 0.3s;
+    display: block;
+    text-align: center;
+    .owl-dot {
+        display: inline-block;
+        height: .75em;
+        width: .75em;
+        margin: .5em .25em;
+        border-radius: 50%;
+        background: $grigio;
+        &.active {
+            background: $rosso;
+        }
+    }
+}
+
+.face-wrapper {
+    margin: 4rem 1rem 1rem;
+    text-align: center;
+    .face-wrapper--pic {
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        left: 0;
+        margin: 0 auto 2rem;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .face-wrapper--descr {
+        margin-bottom: 4rem;
+    }
+}
+
+.galleria-item {
+    margin: 0 1rem;
+}
+
+.galleria-carousel {
+    margin: 4rem 0;
+    .owl-prev i,
+    .owl-next i {
+        color: $verde;
+    }
+}
+
+.footer-inner {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem 0;
+
+    @media (max-width: $mobile) {
+        flex-wrap: wrap;
+    }
+
+    >* {
+        flex: 1 0;
+        margin: 0 1rem;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .footer-inner--social {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            line-height: 1;
+            margin: 1rem 0;
+            i {
+                font-size: 2rem;
+                padding-right: 1rem;
+            }
+            p {
+                margin: 0;
+                font-size: 1rem;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .footer-inner--logo {
+        @media (max-width: $mobile) {
+            margin: 0 1rem 1rem;
+        }
+        img {
+            min-width: 6rem;
+        }
+    }
+}
+
+.main-footer {
+    padding: 2rem 0;
+    background-color: $verde;
+    color: $bianco;
+    a {
+        color: $bianco;
+    }
+    span {
+        display: block;
+        margin: 1rem 0;
+    }
+}
+
+.sub-footer {
+    padding: 0.5rem;
+}
+
+.main-header {
+    .navbar-brand {
+        @media (max-width: $mobile) {
+            order: 0;
+            margin: 0;
+            width: 6rem;
+        }
+    }
+    .navbar-toggler {
+        @media (max-width: $mobile) {
+            order: 1;
+        }
+        .navbar-toggler-icon {
+            font: normal normal normal 14px/1 FontAwesome;
+            color: $blu;
+            width: auto;
+            height: auto;
+            font-size: 2rem;
+            &:before {
+                content: "\f0c9";
+            }
+        }
+    }
+    .main-header-core {
+        @media (max-width: $mobile) {
+            order: 2;
+        }
+    }
+    .navbar {
+        @media (max-width: $mobile) {
+            padding: .5rem 0;
+        }
+    }
+}
+
+.owl-carousel.hero-carousel {
+    z-index: auto;
+
+    .hero-carousel--item {
+        background-color: $bianco;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+    }
+    .hero-carousel--item--info {
+        position: absolute;
+        left: 5%;
+        top: 30%;
+        transform: translateY(-50%);
+
+        h3 {
+            margin: 1rem 0 2rem;
+        }
+    }
+}
+
+.cards-wrapper {
+    @media (max-width: $mobile) {
+        flex-direction: column;
+
+        .card {
+            width: auto;
+        }
+    }
+}
+
+.scopri-carousel, .galleria-carousel {
+    @media (max-width: $mobile) {
+        .owl-nav {
+            .owl-prev {
+                margin-left: -10px;
+            }
+            .owl-next {
+                right: -10px;
+            }
+        }
+    }
+}
+
+#wrapper-contact-us {
+    @media (max-width: $mobile) {
+        padding: 2rem 0.5rem;
     }
 }

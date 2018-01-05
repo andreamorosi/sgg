@@ -12,18 +12,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- Wrapper Contact Us -->
-<section class="wrapper" id="wrapper-contact-us">
+<section class="wrapper bg-blu" id="wrapper-contact-us">
 	<div class="container">
 		<div class="row">
 
-			<div>
-				<h4>Ti interessano le nostre attività?</h4>
-				<p>
+			<div class="contact-foot-info">
+				<h4 class="giallo f-s-xxl">Ti interessano le nostre attività?</h4>
+				<p class="bianco margin-b-none f-s-xl">
 					Scrivici per chiedere qualsiasi info tanto non ti rispondiamo
 				</p>
 			</div>
 
-			<a href="" class="btn">Scrivici</a>			
+			<a href="" class="btn giallo bordo">Scrivici</a>			
 
 		</div>
 	</div>
@@ -34,25 +34,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- Main Footer -->
 	<div class="main-footer">
 		<div class="container">
-			<div class="row">
-				<figure class="">
-					<img src="" alt="">
+			<div class="row footer-inner">
+				<figure class="footer-inner--logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="">
 				</figure>
 
-				<div class="">
-					<h4>Contatti</h4>
+				<div class="footer-inner--list">
+					<h4 class="giallo">Contatti</h4>
 					<span>
-						<i class="fa fa-phone" aria-hidden="true"></i>
+						<i class="fa fa-phone giallo" aria-hidden="true"></i>
 						<a href="">+39 0573 400001</a>
 					</span>
 					<span>
-						<i class="fa fa-phone" aria-hidden="true"></i>
+						<i class="fa fa-envelope giallo" aria-hidden="true"></i>
 						info@sangiorgello.it
 					</span>
 				</div>
 
 				<div>
-					<h4>Menu</h4>
+					<h4 class="giallo">Menu</h4>
 					<ul>
 						<li>
 							<a href="">Home</a>
@@ -80,21 +80,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</ul>
 				</div>
 
-				<div>
-					<h4>Seguici</h4>
+				<div class="footer-inner--social">
+					<h4 class="giallo">Seguici</h4>
 					<a href="">
-						<i class="fa fa-phone" aria-hidden="true"></i>
-						Gruppo Giovani Sangiorgello
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<p>Gruppo Giovani Sangiorgello</p>
 					</a>
 
 					<a href="">
-						<i class="fa fa-phone" aria-hidden="true"></i>
-						Sangiorgello
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						<p>Sangiorgello</p>
 					</a>
 
 					<a href="">
-						<i class="fa fa-phone" aria-hidden="true"></i>
-						Gruppo Giovani Sangiorgello
+						<i class="fa fa-youtube" aria-hidden="true"></i>						
+						<p>Gruppo Giovani Sangiorgello</p>
 					</a>
 				</div>
 			</div>
@@ -102,7 +102,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- //Main Footer -->
 
 	<!-- Sub Footer -->
-	<div class="sub-footer">
+	<div class="sub-footer bg-blu f-s-s text-center bianco">
 		copyright SGG 2017. All Rights Reserved.
 	</div>
 </footer>
