@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <footer>
 
 	<!-- Main Footer -->
-	<div class="main-footer">
+	<div class="main-footer" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/SGG_wall_2.png);">
 		<div class="container">
 			<div class="row footer-inner">
 				<figure class="footer-inner--logo">
