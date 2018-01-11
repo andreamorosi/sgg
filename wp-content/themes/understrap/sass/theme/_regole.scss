@@ -1,5 +1,6 @@
 body {
     color: $scuro;
+    font-family: 'Open Sans', sans-serif;
 } 
 /* Colori */
 .bianco {
@@ -110,6 +111,14 @@ p {
 .f-s-xs {
     font-size: 0.6rem;
 }
+
+.pacifico {
+    font-family: 'Pacifico';
+    font-weight: normal;
+}
+.f-bold {
+    font-weight: bold;
+}
 /* //Tipografia */
 
 /* Elementi */
@@ -131,3 +140,17 @@ main {
     overflow-x: hidden;
 }
 /* //Elementi */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Light.ttf");
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Pacifico';
+    src: url("../fonts/Pacifico-Regular.ttf");
+}
