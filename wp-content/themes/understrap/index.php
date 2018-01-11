@@ -27,8 +27,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 		<div class="hero-carousel--item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);">
 			<div class="hero-carousel--item--info">
-				<span class="titolo giallo">Campi Estivi</span>
-				<h3 class="bianco">Campo Superiori 2016 <br>Il Re Leone</h3>
+				<span class="titolo giallo pacifico">Campi Estivi</span>
+				<h3 class="bianco f-bold">Campo Superiori 2016 <br>Il Re Leone</h3>
 				<a href="" class="btn">Scopri</a>
 			</div>
 		</div>
@@ -50,8 +50,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-sm-12 trio-obj">
-				<i class="fa fa-music trio-obj--icon" aria-hidden="true"></i>
-				<h3>Cene e Feste</h3>
+				<i class="fa fa-cutlery trio-obj--icon" aria-hidden="true"></i>
+				<h3 class="pacifico">Cene e Feste</h3>
 				<p class="trio-obj--descr">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 					Assumenda numquam necessitatibus dolorum libero expedita natus earum. 
@@ -62,7 +62,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 			<div class="col-md-4 col-sm-12 trio-obj">
 				<i class="fa fa-music trio-obj--icon" aria-hidden="true"></i>
-				<h3>Cene e Feste</h3>
+				<h3 class="pacifico">Cene e Feste</h3>
 				<p class="trio-obj--descr">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 					Assumenda numquam necessitatibus dolorum libero expedita natus earum. 
@@ -72,8 +72,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			</div>
 
 			<div class="col-md-4 col-sm-12 trio-obj">
-				<i class="fa fa-music trio-obj--icon" aria-hidden="true"></i>
-				<h3>Cene e Feste</h3>
+				<i class="fa fa-comments trio-obj--icon" aria-hidden="true"></i>
+				<h3 class="pacifico">Cene e Feste</h3>
 				<p class="trio-obj--descr">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 					Assumenda numquam necessitatibus dolorum libero expedita natus earum. 
@@ -93,8 +93,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				<img src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="Sangiorgello Gruppo Giovani">
 			</figure>
 			<div class="col-md-6 col-sm-12">
-				<span class="titolo giallo">Welcome to</span>
-				<h1 class="blu">Gruppo Giovani <br>Sangiorgello</h1>
+				<span class="titolo giallo pacifico">Welcome to</span>
+				<h1 class="blu f-bold">Gruppo Giovani <br>Sangiorgello</h1>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 					Hic, temporibus ab amet obcaecati asperiores quibusdam 
@@ -119,8 +119,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="container">
 		<div class="row">
 			<div class="wrapper-title">
-				<span class="pre-titolo">Estate</span>
-				<h3 class="titolo rosso">Campi estivi</h3>
+				<span class="pre-titolo f-bold">Estate</span>
+				<h3 class="titolo rosso pacifico">Campi estivi</h3>
 			</div>
 		</div>
 
@@ -128,43 +128,43 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			<article class="card">
 				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
 				<header>
-					<h2 class="blu">Campo Elementari</h2>
+					<h2 class="blu pacifico">Campo Elementari</h2>
 				</header>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
 				<div class="card--footer">
-					<span class="blu">7-11 anni</span>
-					<a href="">Iscriviti</a>
+					<span class="blu f-bold">7-11 anni</span>
+					<a href="" class="f-bold">Iscriviti</a>
 				</div>
 			</article>
 			<article class="card">
 				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
 				<header>
-					<h2 class="verde">Campo Medie</h2>
+					<h2 class="verde pacifico">Campo Medie</h2>
 				</header>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
 				<div class="card--footer">
-					<span class="verde">7-11 anni</span>
-					<a href="">Iscriviti</a>
+					<span class="verde f-bold">7-11 anni</span>
+					<a href="" class="f-bold">Iscriviti</a>
 				</div>
 			</article>
 			<article class="card">
 				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
 				<header>
-					<h2 class="rosso">Campo Superiori</h2>
+					<h2 class="rosso pacifico">Campo Superiori</h2>
 				</header>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
 				<div class="card--footer">
-					<span class="rosso">7-11 anni</span>
-					<a href="">Iscriviti</a>
+					<span class="rosso f-bold">7-11 anni</span>
+					<a href="" class="f-bold">Iscriviti</a>
 				</div>
 			</article>
 		</div>
@@ -180,8 +180,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="container">
 		<div class="row">
 			<div class="wrapper-title">
-				<span>Animatori</span>
-				<h3 class="rosso">Scopriamo i volti</h3>
+				<span class="pre-titolo f-bold">Animatori</span>
+				<h3 class="rosso pacifico">Scopriamo i volti</h3>
 			</div>
 		</div>
 		<div class="owl-carousel scopri-carousel">
@@ -191,8 +191,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				</figure>
 				
 				<div class="face-wrapper--descr">
-					<h5>Jonny</h5>
-					<p>25 anni</p>
+					<h5 class="pacifico f-s-xl blu">Jonny</h5>
+					<p class="f-bold">25 anni</p>
 				</div>
 			</div>	
 
@@ -202,8 +202,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				</figure>
 				
 				<div class="face-wrapper--descr">
-					<h5>Jonny</h5>
-					<p>25 anni</p>
+					<h5 class="pacifico f-s-xl blu">Jonny</h5>
+					<p class="f-bold">25 anni</p>
 				</div>
 			</div>
 
@@ -213,8 +213,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				</figure>
 				
 				<div class="face-wrapper--descr">
-					<h5>Jonny</h5>
-					<p>25 anni</p>
+					<h5 class="pacifico f-s-xl blu">Jonny</h5>
+					<p class="f-bold">25 anni</p>
 				</div>
 			</div>
 
@@ -224,8 +224,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				</figure>
 				
 				<div class="face-wrapper--descr">
-					<h5>Jonny</h5>
-					<p>25 anni</p>
+					<h5 class="pacifico f-s-xl blu">Jonny</h5>
+					<p class="f-bold">25 anni</p>
 				</div>
 			</div>
 
@@ -244,8 +244,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="container">
 		<div class="row">
 			<div class="wrapper-title">
-				<span>Galleria</span>
-				<h3 class="verde">I nostri momenti</h3>
+				<span class="pre-titolo f-bold">Galleria</span>
+				<h3 class="verde pacifico">I nostri momenti</h3>
 			</div>
 		</div>
 
@@ -269,8 +269,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="container">
 		<div class="row">
 			<div class="wrapper-title">
-				<span>Eventi</span>
-				<h3>Prossimi Appuntamenti</h3>
+				<span class="pre-titolo f-bold bianco">Eventi</span>
+				<h3 class="pacifico giallo">Prossimi Appuntamenti</h3>
 			</div>
 		</div>
 
@@ -279,8 +279,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
 
 				<header>
-					<h2 class="blu">Festa Carnevale</h2>
-					<span class="giallo">26 feb</span>
+					<h2 class="blu pacifico">Festa Carnevale</h2>
+					<span class="giallo f-bold">26 feb</span>
 				</header>
 				
 				<p>
@@ -288,38 +288,38 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
 				<div class="card--footer">
-					<span class="blu">15:00</span>
-					<span class="giallo">Oggi</span>
+					<span class="blu f-bold">15:00</span>
+					<span class="giallo f-bold">Oggi</span>
 				</div>
 			</article>
 			<article class="card col-md-4 col-sm-12">
 				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
 				<header>
-					<h2 class="blu">Festa Carnevale</h2>
-					<span class="giallo">26 feb</span>
+					<h2 class="blu pacifico">Festa Carnevale</h2>
+					<span class="giallo f-bold">26 feb</span>
 				</header>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
 				<div class="card--footer">
-					<span class="blu">15:00</span>
-					<span class="giallo">Oggi</span>
+					<span class="blu f-bold">15:00</span>
+					<span class="giallo f-bold">Oggi</span>
 				</div>
 			</article>
 			<article class="card col-md-4 col-sm-12">
 				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
 				<header>
-					<h2 class="blu">Festa Carnevale</h2>
-					<span class="giallo">26 feb</span>
+					<h2 class="blu pacifico">Festa Carnevale</h2>
+					<span class="giallo f-bold">26 feb</span>
 				</header>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 					Suscipit, nostrum quidem? Commodi doloremque ad quam.
 				</p>
 				<div class="card--footer">
-					<span class="blu">15:00</span>
-					<span class="giallo">Oggi</span>
+					<span class="blu f-bold">15:00</span>
+					<span class="giallo f-bold">Oggi</span>
 				</div>
 			</article>
 		</div>

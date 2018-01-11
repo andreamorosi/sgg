@@ -17,8 +17,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<div class="contact-foot-info">
-				<h4 class="giallo f-s-xxl">Ti interessano le nostre attività?</h4>
-				<p class="bianco margin-b-none f-s-xl">
+				<h4 class="giallo f-s-xxl pacifico">Ti interessano le nostre attività?</h4>
+				<p class="bianco margin-b-none f-s-xl f-bold">
 					Scrivici per chiedere qualsiasi info tanto non ti rispondiamo
 				</p>
 			</div>
@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</figure>
 
 				<div class="footer-inner--list">
-					<h4 class="giallo">Contatti</h4>
+					<h4 class="giallo pacifico">Contatti</h4>
 					<span>
 						<i class="fa fa-phone giallo" aria-hidden="true"></i>
 						<a href="">+39 0573 400001</a>
@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 
 				<div>
-					<h4 class="giallo">Menu</h4>
+					<h4 class="giallo pacifico">Menu</h4>
 					<ul>
 						<li>
 							<a href="">Home</a>
@@ -81,7 +81,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 
 				<div class="footer-inner--social">
-					<h4 class="giallo">Seguici</h4>
+					<h4 class="giallo pacifico">Seguici</h4>
 					<a href="">
 						<i class="fa fa-facebook" aria-hidden="true"></i>
 						<p>Gruppo Giovani Sangiorgello</p>
