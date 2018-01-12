@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="top-header--inner">
 				<p class="top-header--inner-p margin-b-none margin-o-1 f-s-s">
 					<i class="fa fa-envelope-o f-s-l" aria-hidden="true"></i>
-					<span class="giallo">info@sangiorgello.it</span>
+					<span class="giallo">gruppogiovanisangiorgello@gmail.com</span>
 				</p>
 
 				<p class="top-header--inner-p margin-b-none margin-o-1 margin-r-auto f-s-s">

@@ -53,31 +53,25 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				<i class="fa fa-cutlery trio-obj--icon" aria-hidden="true"></i>
 				<h3 class="pacifico">Cene e Feste</h3>
 				<p class="trio-obj--descr">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda numquam necessitatibus dolorum libero expedita natus earum. 
-					Architecto, cupiditate! Beatae, neque.
+				Organizziamo feste a tema e cene di raccolta fondi per finanziare le nostre attività o per sostenere progetti di altre Associazioni del territorio
 				</p>
 				<a href="" class="btn rosso bordo">Scopri</a>
 			</div>
 
 			<div class="col-md-4 col-sm-12 trio-obj">
 				<i class="fa fa-music trio-obj--icon" aria-hidden="true"></i>
-				<h3 class="pacifico">Cene e Feste</h3>
+				<h3 class="pacifico">Animazione</h3>
 				<p class="trio-obj--descr">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda numquam necessitatibus dolorum libero expedita natus earum. 
-					Architecto, cupiditate! Beatae, neque.
+				Animiamo feste di compleanno per bambini con musica, giochi e truccabimbo in cambio di un’offerta a sostegno dei nostri progetti
 				</p>
 				<a href="" class="btn verde bordo">Scopri</a>
 			</div>
 
 			<div class="col-md-4 col-sm-12 trio-obj">
 				<i class="fa fa-comments trio-obj--icon" aria-hidden="true"></i>
-				<h3 class="pacifico">Cene e Feste</h3>
+				<h3 class="pacifico">Incontri e Seminari</h3>
 				<p class="trio-obj--descr">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda numquam necessitatibus dolorum libero expedita natus earum. 
-					Architecto, cupiditate! Beatae, neque.
+				Creiamo momenti di incontro e discussione, gratuiti e aperti a tutti, su temi di interesse del Gruppo o su questioni di attualità
 				</p>
 				<a href="" class="btn bordo">Scopri</a>
 			</div>
@@ -96,10 +90,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				<span class="titolo giallo pacifico">Welcome to</span>
 				<h1 class="blu f-bold">Gruppo Giovani <br>Sangiorgello</h1>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Hic, temporibus ab amet obcaecati asperiores quibusdam 
-					quia nam ipsa eius a ducimus reiciendis molestias tempore 
-					nesciunt aspernatur natus officiis nihil cupiditate.
+				Il Gruppo Giovani Sangiorgello è nato come gruppo informale di ragazzi e ragazze delle Parrocchie di Gello e San Giorgio con l’obiettivo di dare un contributo attivo alla vita della comunità parrocchiale.
 				</p>
 				<a href="" class="btn">Scopri di più</a>
 			</div>

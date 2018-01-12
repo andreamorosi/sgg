@@ -47,7 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</span>
 					<span>
 						<i class="fa fa-envelope giallo" aria-hidden="true"></i>
-						info@sangiorgello.it
+						gruppogiovanisangiorgello@gmail.com
 					</span>
 				</div>
 
