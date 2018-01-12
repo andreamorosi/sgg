@@ -25,7 +25,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 <section class="wrapper hero-wrapper" id="wrapper-hero">
 	<div class="owl-carousel hero-carousel">
 
-		<div class="hero-carousel--item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);">
+		<div class="hero-carousel--item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/home_light.jpg);">
 			<div class="hero-carousel--item--info">
 				<span class="titolo giallo pacifico">Campi Estivi</span>
 				<h3 class="bianco f-bold">Campo Superiori 2016 <br>Il Re Leone</h3>
@@ -33,7 +33,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			</div>
 		</div>
 
-		<div class="hero-carousel--item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);">
+		<div class="hero-carousel--item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/home_light.jpg);">
 			<div class="hero-carousel--item--info">
 				<span class="titolo giallo">Campi Estivi</span>
 				<h3 class="bianco">Campo Medie 2016 <br>Il Re Leone</h3>
@@ -100,11 +100,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 <!-- Wrapper Stats -->
 <section class="wrapper" id="wrapper-stats">
-	<figure>
-		<img src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="">
-	</figure>
+	<figure class="c-c-combo-breaker"></figure>
 </section><!-- //Wrapper Stats -->
-
 <!-- Wrapper Activities -->
 <section class="wrapper" id="wrapper-activities">
 	<div class="container">
@@ -117,7 +114,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 		<div class="row cards-wrapper">
 			<article class="card">
-				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
+				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/Campo_Elementari.png);"></figure>
 				<header>
 					<h2 class="blu pacifico">Campo Elementari</h2>
 				</header>
@@ -131,7 +128,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				</div>
 			</article>
 			<article class="card">
-				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
+				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/Campo_Medie.png);"></figure>
 				<header>
 					<h2 class="verde pacifico">Campo Medie</h2>
 				</header>
@@ -145,7 +142,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				</div>
 			</article>
 			<article class="card">
-				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/header.jpg);"></figure>
+				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/Campo_Superiori.png);"></figure>
 				<header>
 					<h2 class="rosso pacifico">Campo Superiori</h2>
 				</header>
@@ -178,7 +175,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 		<div class="owl-carousel scopri-carousel">
 			<div class="face-wrapper">
 				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
+					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/Animatore_jonny.jpg" alt="First slide">
 				</figure>
 				
 				<div class="face-wrapper--descr">
@@ -189,7 +186,18 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 			<div class="face-wrapper">
 				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
+					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/Animatore_danda.jpg" alt="First slide">
+				</figure>
+				
+				<div class="face-wrapper--descr">
+					<h5 class="pacifico f-s-xl blu">Amanda</h5>
+					<p class="f-bold">27 anni</p>
+				</div>
+			</div>
+
+			<div class="face-wrapper">
+				<figure class="face-wrapper--pic">
+					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/Animatore_jonny.jpg" alt="First slide">
 				</figure>
 				
 				<div class="face-wrapper--descr">
@@ -200,23 +208,12 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 			<div class="face-wrapper">
 				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
+					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/Animatore_danda.jpg" alt="First slide">
 				</figure>
 				
 				<div class="face-wrapper--descr">
-					<h5 class="pacifico f-s-xl blu">Jonny</h5>
-					<p class="f-bold">25 anni</p>
-				</div>
-			</div>
-
-			<div class="face-wrapper">
-				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="First slide">
-				</figure>
-				
-				<div class="face-wrapper--descr">
-					<h5 class="pacifico f-s-xl blu">Jonny</h5>
-					<p class="f-bold">25 anni</p>
+					<h5 class="pacifico f-s-xl blu">Amanda</h5>
+					<p class="f-bold">27 anni</p>
 				</div>
 			</div>
 

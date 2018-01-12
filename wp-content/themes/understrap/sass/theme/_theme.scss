@@ -109,7 +109,7 @@
         color: $bianco;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         position: relative;
         padding: 2.5rem 2rem 2rem;
@@ -476,5 +476,18 @@
 #wrapper-contact-us {
     @media (max-width: $mobile) {
         padding: 2rem 0.5rem;
+    }
+}
+#wrapper-stats {
+    position: relative;
+}
+.c-c-combo-breaker {
+    background-image: url(../img/home_light.jpg);
+    background-size: cover;
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @media (max-width: $mobile) {
+        height: 300px;
     }
 }
