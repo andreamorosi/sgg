@@ -8,11 +8,6 @@
 get_header();
 ?>
 
-<!-- Wrapper Hero -->
-<section class="wrapper hero-wrapper" id="wrapper-hero">
-    <figure class="hero-banner"></figure>
-</section><!-- //Wrapper Hero -->
-
 <!-- Wrapper Animatori -->
 <section class="wrapper animatori-wrapper">
     <div class="container">
