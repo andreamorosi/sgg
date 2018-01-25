@@ -491,3 +491,91 @@
         height: 300px;
     }
 }
+
+.hero-banner {
+    background-image: url(../img/SGG_wall_2.png);
+    background-size: cover;
+    background-position: center 75%;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.animatori-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .animatori-item {
+        flex: 1 0 23%;
+        width: 23%;
+        max-width: 23%;
+        margin: 1%;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @media (max-width: $mobile) {
+            flex: 1 0 100%;
+            width: 100%;
+            max-width: 100%;
+            margin: 1% 0;
+        }
+
+        @media (min-width: 600px) and (max-width: $tablet) {
+            flex: 1 0 48%;
+            width: 48%;
+            max-width: 48%;
+            margin: 1%;
+        }
+
+        &:hover {
+            span {
+                opacity: 1;
+            }
+            &:after {
+                opacity: 1;
+            }
+        }
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        &:nth-child(5n) {
+            margin-left: 0;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(29, 112, 183, 0.8);
+            opacity: 0;
+            transition: all ease .2s;
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 10;
+            color: $bianco;
+            font-size: 2.5rem;
+            transition: all ease .2s;
+            opacity: 0;
+        }
+    }
+}

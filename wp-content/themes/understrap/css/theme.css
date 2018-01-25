@@ -9503,7 +9503,7 @@ a.skip-link {
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   padding: 2.5rem 2rem 2rem; }
@@ -9528,7 +9528,8 @@ a.skip-link {
     position: absolute;
     top: -3rem;
     padding: 2rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+    font-size: 2rem; }
   .wrapper-trio .trio-obj .trio-obj--descr {
     text-align: center;
     margin: 1rem 0 2rem; }
@@ -9782,6 +9783,88 @@ a.skip-link {
   #wrapper-contact-us {
     padding: 2rem 0.5rem; } }
 
+#wrapper-stats {
+  position: relative; }
+
+.c-c-combo-breaker {
+  background-image: url(../img/home_light.jpg);
+  background-size: cover;
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  @media (max-width: 770px) {
+    .c-c-combo-breaker {
+      height: 300px; } }
+
+.hero-banner {
+  background-image: url(../img/SGG_wall_2.png);
+  background-size: cover;
+  background-position: center 75%;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%; }
+  @media (max-width: 770px) {
+    .hero-banner {
+      display: none; } }
+
+.animatori-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap; }
+  .animatori-inner .animatori-item {
+    flex: 1 0 23%;
+    width: 23%;
+    max-width: 23%;
+    margin: 1%;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden; }
+    @media (max-width: 770px) {
+      .animatori-inner .animatori-item {
+        flex: 1 0 100%;
+        width: 100%;
+        max-width: 100%;
+        margin: 1% 0; } }
+    @media (min-width: 600px) and (max-width: 1000px) {
+      .animatori-inner .animatori-item {
+        flex: 1 0 48%;
+        width: 48%;
+        max-width: 48%;
+        margin: 1%; } }
+    .animatori-inner .animatori-item:hover span {
+      opacity: 1; }
+    .animatori-inner .animatori-item:hover:after {
+      opacity: 1; }
+    .animatori-inner .animatori-item:nth-child(1) {
+      margin-left: 0; }
+    .animatori-inner .animatori-item:nth-child(4n) {
+      margin-right: 0; }
+    .animatori-inner .animatori-item:nth-child(5n) {
+      margin-left: 0; }
+    .animatori-inner .animatori-item:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgba(29, 112, 183, 0.8);
+      opacity: 0;
+      transition: all ease .2s; }
+    .animatori-inner .animatori-item span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      color: #fff;
+      font-size: 2.5rem;
+      transition: all ease .2s;
+      opacity: 0; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
@@ -9807,7 +9890,8 @@ a.skip-link {
     border: 1px solid #e9ecef; }
 
 body {
-  color: #464646; }
+  color: #464646;
+  font-family: 'Open Sans', sans-serif; }
 
 /* Colori */
 .bianco {
@@ -9851,6 +9935,10 @@ body {
 .margin-v-1 {
   margin-top: 1rem;
   margin-bottom: 1rem; }
+
+.margin-v-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .margin-o-1 {
   margin-left: 1rem;
@@ -9906,6 +9994,13 @@ p {
 .f-s-xs {
   font-size: 0.6rem; }
 
+.pacifico {
+  font-family: 'Pacifico';
+  font-weight: normal; }
+
+.f-bold {
+  font-weight: bold; }
+
 /* //Tipografia */
 /* Elementi */
 .titolo {
@@ -9925,6 +10020,19 @@ main {
   overflow-x: hidden; }
 
 /* //Elementi */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url("../fonts/Pacifico-Regular.ttf"); }
+
 /**
  * Owl Carousel v2.2.1
  * Copyright 2013-2017 David Deutsch
