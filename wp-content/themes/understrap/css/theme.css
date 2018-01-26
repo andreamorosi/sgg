@@ -9821,6 +9821,10 @@ a.skip-link {
     position: relative;
     border-radius: 50%;
     overflow: hidden; }
+    .animatori-inner .animatori-item img {
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%; }
     @media (max-width: 770px) {
       .animatori-inner .animatori-item {
         flex: 1 0 100%;
