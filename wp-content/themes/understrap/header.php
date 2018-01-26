@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="collapse navbar-collapse main-header-core" id="mainHeader">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
-						<a href="">Home</a>
+						<a href="/">Home</a>
 					</li>
 					<li class="nav-item">
 						<a href="">Chi siamo</a>
@@ -86,7 +86,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<a href="">Campi estivi</a>
 					</li>
 					<li class="nav-item">
-						<a href="">Animatori</a>
+						<a href="/animatori">Animatori</a>
 					</li>
 					<li class="nav-item">
 						<a href="">Galleria</a>
