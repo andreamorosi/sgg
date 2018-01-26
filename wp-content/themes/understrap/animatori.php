@@ -21,7 +21,20 @@ get_header();
 
             <div class="col-sm-12 offset-sm-0 col-md-6 offset-md-3 text-center">
                 <p class="margin-v-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptate iusto nam dolore corporis voluptatibus tempore, labore incidunt! Ipsa eum debitis facere hic inventore, labore reiciendis excepturi quo tempora nesciunt.
+                L’animatore è un volontario che, dopo un
+                percorso di formazione in linea con il Progetto
+                Educativo dell’Associazione, mette a disposizione il
+                suo tempo e le sue competenze per contribuire ai
+                progetti del Gruppo, animato dal desiderio di
+                trasmettere i valori in cui crede. Gli animatori
+                sono catechisti dei gruppi dei bambini e dei
+                ragazzi e fanno parte a loro volta di un gruppo in
+                cui si confrontano, discutono dei problemi
+                educativi che possono incontrare, condividono
+                idee e progetti.
+                Tutti gli animatori prestano il loro servizio in
+                maniera del tutto volontaria e gratuita. Ed è per
+                questo che il loro lavoro è così prezioso!
                 </p>
             </div>
 
