@@ -20,27 +20,27 @@ get_header();
 
             <div class="col-sm-12 col-md-6">
                 <div class="row margin-v-2">
-                    <h3 class="giallo pacifico">Chi siamo</h3>
+                    <h3 class="giallo pacifico">Da dove nasce SGG?</h3>
                     <p class="text-align-right">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nulla odit doloribus rerum eius repellendus necessitatibus tenetur in, illum iste voluptatem quaerat. Tempora impedit consequuntur esse! Velit ducimus officia totam.
+                    Il Gruppo Giovani Sangiorgello è nato come gruppo informale di ragazzi e ragazze delle Parrocchie di Gello e San Giorgio con l’obiettivo di dare un contributo attivo alla vita della comunità parrocchiale.
                     </p>
                 </div>
             </div>
 
             <div class="col-sm-12 col-md-6 offset-md-6">
                 <div class="row margin-v-2">
-                    <h3 class="giallo pacifico">Cosa facciamo</h3>
+                    <h3 class="giallo pacifico">Cosa siamo adesso</h3>
                     <p class="text-align-left">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nulla odit doloribus rerum eius repellendus necessitatibus tenetur in, illum iste voluptatem quaerat. Tempora impedit consequuntur esse! Velit ducimus officia totam.
+                    Nel  2013 il gruppo è diventato un’Associazione di volontariato che rivolge le sue attività principalmente ai bambini e ai ragazzi della Parrocchia, aprendo però le sue porte a chiunque condivida i principi ed i valori espressi nel Progetto Educativo redatto dai soci fondatori: il Vangelo come guida della nostra azione, la Comunità come luogo di crescita personale e collettiva, il volontariato e l’impegno civico come fondamenti della vita associativa.
                     </p>
                 </div>
             </div>
 
             <div class="col-sm-12 col-md-6">
                 <div class="row margin-v-2">
-                    <h3 class="giallo pacifico">Chi siamo</h3>
+                    <h3 class="giallo pacifico">Com'è organizzata l’Associazione?</h3>
                     <p class="text-align-right">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nulla odit doloribus rerum eius repellendus necessitatibus tenetur in, illum iste voluptatem quaerat. Tempora impedit consequuntur esse! Velit ducimus officia totam.
+                    L’Associazione è composta da un Consiglio, entrato in carica nel 2017, dai Soci Attivi, dai Soci onorari e dai Soci sostenitori.
                     </p>
                 </div>
             </div>
