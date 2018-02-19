@@ -101,52 +101,45 @@ get_header();
 		</div>
 
 		<div class="row cards-wrapper">
-			<article class="card">
-				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/Campo_Elementari.png);"></figure>
-				<header>
-					<h2 class="blu pacifico">Campo Elementari</h2>
-				</header>
-				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-					Suscipit, nostrum quidem? Commodi doloremque ad quam.
-				</p>
-				<div class="card--footer">
-					<span class="blu f-bold">7-11 anni</span>
-					<a href="" class="f-bold">Iscriviti</a>
-				</div>
-			</article>
-			<article class="card">
-				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/Campo_Medie.png);"></figure>
-				<header>
-					<h2 class="verde pacifico">Campo Medie</h2>
-				</header>
-				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-					Suscipit, nostrum quidem? Commodi doloremque ad quam.
-				</p>
-				<div class="card--footer">
-					<span class="verde f-bold">7-11 anni</span>
-					<a href="" class="f-bold">Iscriviti</a>
-				</div>
-			</article>
-			<article class="card">
-				<figure style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/Campo_Superiori.png);"></figure>
-				<header>
-					<h2 class="rosso pacifico">Campo Superiori</h2>
-				</header>
-				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-					Suscipit, nostrum quidem? Commodi doloremque ad quam.
-				</p>
-				<div class="card--footer">
-					<span class="rosso f-bold">7-11 anni</span>
-					<a href="" class="f-bold">Iscriviti</a>
-				</div>
-			</article>
+			<?php
+
+			$args = array (
+				'post_type'              => 'campo',
+				'orderby'                => 'meta_value',
+				'order'                  => 'ASC',
+				'posts_per_page' => -1
+			);
+
+			$campiestivi = new WP_Query($args);
+
+			if ( $campiestivi->have_posts() ) {
+				while ( $campiestivi->have_posts() ) {
+					$campiestivi->the_post();
+					?>
+
+					<article class="card">
+						<figure style="background-image:url(<?php echo the_post_thumbnail_url(); ?>);"></figure>
+						<header>
+							<h2 class="blu pacifico"><?php echo the_title_attribute(); ?></h2>
+						</header>
+						<p>
+							<?php echo the_content(); ?>
+						</p>
+						<div class="card--footer">
+							<span class="blu f-bold"><?php echo get_field('eta'); ?></span>
+							<a href="/campi-estivi" class="f-bold">Iscriviti</a>
+						</div>
+					</article>
+					<?php
+
+				}
+				wp_reset_postdata();
+			}
+			?>
 		</div>
 
 		<div class="row">
-			<a class="btn margin-o-auto rosso" href="">Tutti i campi</a>
+			<a class="btn margin-o-auto rosso" href="/campi-estivi">Tutti i campi</a>
 		</div>
 	</div>
 </section><!-- //Wrapper Activities -->
