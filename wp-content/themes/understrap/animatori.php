@@ -19,7 +19,7 @@ get_header();
                 </div>
             </div>
 
-            <div class="col-sm-12 offset-sm-0 col-md-6 offset-md-3 text-center">
+            <div class="col-sm-12 offset-sm-0 col-md-8 offset-md-2 text-center">
 
                 <p class="margin-v-2">
                 L’animatore è un volontario che, dopo un
