@@ -585,3 +585,106 @@
         }
     }
 }
+
+.campi-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+    @media (max-width: $mobile) {
+        display: block;
+    }
+}
+.campi-card {
+    flex: 1 0 30%;
+    max-width: 30%;
+    margin: 1%;
+    background: $grigio;
+
+    @media (max-width: $mobile) {
+        max-width: none;
+        margin: 2rem 1rem;
+    }
+
+    &:first-child {
+        .campi-card--header {
+            background: $giallo;
+        }
+        .campi-card--info span {
+            color: $giallo;
+        }
+        .campi-animatore {
+            color: $giallo;
+        }
+    }
+    &:nth-child(2) {
+        .campi-card--header {
+            background: $verde;
+        }
+        .campi-card--info span {
+            color: $verde;
+        }
+        .campi-animatore {
+            color: $verde;
+        }
+    }
+    &:last-child {
+        .campi-card--header {
+            background: $rosso;
+        }
+        .campi-card--info span {
+            color: $rosso;
+        }
+        .campi-animatore {
+            color: $rosso;
+        }
+    }
+
+    &--header {
+        padding: 1rem;
+        color: white;
+        h4 {
+            margin: 0;
+            padding: 1rem;
+            margin-bottom: 0;
+        }
+        h5 {
+            padding: 1rem;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+    &--main {
+        padding: 1rem;
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+    }
+    &--info {
+        margin: 1rem;
+        span {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        p {
+            display: inline-block;
+            margin: 0;
+            font-size: 1.1rem;
+            padding-left: 0.5rem;
+        }
+    }
+    &--footer {
+        padding: 1rem;
+        text-align: center;
+        p {
+            font-weight: bold;
+            font-size: 1rem;
+            &.campi-animatore {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
