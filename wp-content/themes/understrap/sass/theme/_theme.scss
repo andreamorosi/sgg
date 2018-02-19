@@ -589,7 +589,7 @@
 .campi-inner {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: unset;
 
     @media (max-width: $mobile) {
         display: block;
@@ -616,6 +616,9 @@
         .campi-animatore {
             color: $giallo;
         }
+        .campi-card--info a {
+            color: $giallo;
+        }
     }
     &:nth-child(2) {
         .campi-card--header {
@@ -627,6 +630,9 @@
         .campi-animatore {
             color: $verde;
         }
+        .campi-card--info a {
+            color: $verde;
+        }
     }
     &:last-child {
         .campi-card--header {
@@ -636,6 +642,9 @@
             color: $rosso;
         }
         .campi-animatore {
+            color: $rosso;
+        }
+        .campi-card--info a {
             color: $rosso;
         }
     }
@@ -674,6 +683,15 @@
             margin: 0;
             font-size: 1.1rem;
             padding-left: 0.5rem;
+        }
+        a {
+            font-size: 1.6rem;
+            margin-left: 0.5rem;
+            line-height: 1;
+            transition: all ease 0.2s;
+            &:hover {
+                color: $scuro!important;
+            }
         }
     }
     &--footer {

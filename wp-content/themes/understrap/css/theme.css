@@ -9872,7 +9872,7 @@ a.skip-link {
 .campi-inner {
   display: flex;
   justify-content: space-around;
-  align-items: baseline; }
+  align-items: unset; }
   @media (max-width: 770px) {
     .campi-inner {
       display: block; } }
@@ -9892,17 +9892,23 @@ a.skip-link {
     color: #f4c631; }
   .campi-card:first-child .campi-animatore {
     color: #f4c631; }
+  .campi-card:first-child .campi-card--info a {
+    color: #f4c631; }
   .campi-card:nth-child(2) .campi-card--header {
     background: #21b8ba; }
   .campi-card:nth-child(2) .campi-card--info span {
     color: #21b8ba; }
   .campi-card:nth-child(2) .campi-animatore {
     color: #21b8ba; }
+  .campi-card:nth-child(2) .campi-card--info a {
+    color: #21b8ba; }
   .campi-card:last-child .campi-card--header {
     background: #ed3b54; }
   .campi-card:last-child .campi-card--info span {
     color: #ed3b54; }
   .campi-card:last-child .campi-animatore {
+    color: #ed3b54; }
+  .campi-card:last-child .campi-card--info a {
     color: #ed3b54; }
   .campi-card--header {
     padding: 1rem;
@@ -9933,6 +9939,13 @@ a.skip-link {
       margin: 0;
       font-size: 1.1rem;
       padding-left: 0.5rem; }
+    .campi-card--info a {
+      font-size: 1.6rem;
+      margin-left: 0.5rem;
+      line-height: 1;
+      transition: all ease 0.2s; }
+      .campi-card--info a:hover {
+        color: #464646 !important; }
   .campi-card--footer {
     padding: 1rem;
     text-align: center; }
