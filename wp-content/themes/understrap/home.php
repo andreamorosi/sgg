@@ -72,7 +72,7 @@ get_header();
 	<div class="container">
 		<div class="row">
 			<figure class="col-md-6">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/header.jpg" alt="Sangiorgello Gruppo Giovani">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/SGG_wall_2.jpg" alt="Sangiorgello Gruppo Giovani">
 			</figure>
 			<div class="col-md-6 col-sm-12">
 				<span class="titolo giallo pacifico">Welcome to</span>
@@ -161,54 +161,42 @@ get_header();
 			</div>
 		</div>
 		<div class="owl-carousel scopri-carousel">
-			<div class="face-wrapper">
-				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/Animatore_jonny.jpg" alt="First slide">
-				</figure>
-				
-				<div class="face-wrapper--descr">
-					<h5 class="pacifico f-s-xl blu">Jonny</h5>
-					<p class="f-bold">25 anni</p>
-				</div>
-			</div>	
 
-			<div class="face-wrapper">
-				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/Animatore_danda.jpg" alt="First slide">
-				</figure>
-				
-				<div class="face-wrapper--descr">
-					<h5 class="pacifico f-s-xl blu">Amanda</h5>
-					<p class="f-bold">27 anni</p>
-				</div>
-			</div>
+			<?php
 
-			<div class="face-wrapper">
-				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/Animatore_jonny.jpg" alt="First slide">
-				</figure>
-				
-				<div class="face-wrapper--descr">
-					<h5 class="pacifico f-s-xl blu">Jonny</h5>
-					<p class="f-bold">25 anni</p>
-				</div>
-			</div>
+			$args = array (
+				'post_type'              => 'animatore',
+				'orderby'                => 'meta_value',
+				'order'                  => 'ASC',
+				'posts_per_page' => -1
+			);
 
-			<div class="face-wrapper">
-				<figure class="face-wrapper--pic">
-					<img class="" src="<?php echo get_template_directory_uri(); ?>/img/Animatore_danda.jpg" alt="First slide">
-				</figure>
-				
-				<div class="face-wrapper--descr">
-					<h5 class="pacifico f-s-xl blu">Amanda</h5>
-					<p class="f-bold">27 anni</p>
-				</div>
-			</div>
+			$animatori = new WP_Query($args);
+
+			if ( $animatori->have_posts() ) {
+				while ( $animatori->have_posts() ) {
+					$animatori->the_post();
+					?>
+
+					<div class="face-wrapper">
+						<figure class="face-wrapper--pic">
+							<img class="" src="<?php echo the_post_thumbnail_url(); ?>" alt="Animatore <?php echo the_title_attribute(); ?>">
+						</figure>
+						
+						<div class="face-wrapper--descr">
+							<h5 class="pacifico f-s-xl blu"><?php echo the_title_attribute(); ?></h5>
+						</div>
+					</div>	
+					<?php
+				}
+				wp_reset_postdata();
+			}
+			?>
 
 		</div>
 
 		<div class="row">
-			<a href="" class="btn margin-o-auto rosso bordo">Scopri tutti</a>
+			<a href="/animatori" class="btn margin-o-auto rosso bordo">Scopri tutti</a>
 		</div>
 		
 	</div>
