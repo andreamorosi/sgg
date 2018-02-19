@@ -83,7 +83,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<a href="/chi-siamo">Chi siamo</a>
 					</li>
 					<li class="nav-item">
-						<a href="">Campi estivi</a>
+						<a href="/campi-estivi">Campi estivi</a>
 					</li>
 					<li class="nav-item">
 						<a href="/animatori">Animatori</a>
