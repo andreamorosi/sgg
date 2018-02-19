@@ -55,19 +55,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<h4 class="giallo pacifico">Menu</h4>
 					<ul>
 						<li>
-							<a href="">Home</a>
+							<a href="/">Home</a>
 						</li>
 
 						<li>
-							<a href="">Chi Siamo</a>
+							<a href="/chi-siamo">Chi Siamo</a>
 						</li>
 
 						<li>
-							<a href="">Campi Estivi</a>
+							<a href="/campi-estivi">Campi Estivi</a>
 						</li>
 
 						<li>
-							<a href="">Animatori</a>
+							<a href="/animatori">Animatori</a>
 						</li>
 
 						<li>

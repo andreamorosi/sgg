@@ -80,7 +80,7 @@ get_header();
 				<p>
 				Il Gruppo Giovani Sangiorgello è nato come gruppo informale di ragazzi e ragazze delle Parrocchie di Gello e San Giorgio con l’obiettivo di dare un contributo attivo alla vita della comunità parrocchiale.
 				</p>
-				<a href="" class="btn">Scopri di più</a>
+				<a href="/chi-siamo" class="btn">Scopri di più</a>
 			</div>
 		</div>
 	</div>
