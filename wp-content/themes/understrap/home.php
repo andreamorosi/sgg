@@ -157,7 +157,7 @@ get_header();
 		<div class="row">
 			<div class="wrapper-title">
 				<span class="pre-titolo f-bold">Animatori</span>
-				<h3 class="rosso pacifico">Scopriamo i volti</h3>
+				<h3 class="titolo rosso pacifico">Scopriamo i volti</h3>
 			</div>
 		</div>
 		<div class="owl-carousel scopri-carousel">
@@ -221,7 +221,7 @@ get_header();
 		<div class="row">
 			<div class="wrapper-title">
 				<span class="pre-titolo f-bold">Galleria</span>
-				<h3 class="verde pacifico">I nostri momenti</h3>
+				<h3 class="titolo verde pacifico">I nostri momenti</h3>
 			</div>
 		</div>
 
@@ -246,7 +246,7 @@ get_header();
 		<div class="row">
 			<div class="wrapper-title">
 				<span class="pre-titolo f-bold bianco">Eventi</span>
-				<h3 class="pacifico giallo">Prossimi Appuntamenti</h3>
+				<h3 class="titolo pacifico giallo">Prossimi Appuntamenti</h3>
 			</div>
 		</div>
 

@@ -15,7 +15,7 @@ get_header();
             <div class="col-12">
                 <div class="wrapper-title">
                     <span class="pre-titolo f-bold">Animatori</span>
-                    <h3 class="verde pacifico">Scopriamo i volti</h3>
+                    <h3 class="titolo verde pacifico">Scopriamo i volti</h3>
                 </div>
             </div>
 
