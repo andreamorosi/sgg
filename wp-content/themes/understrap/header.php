@@ -41,7 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<p class="top-header--inner-p margin-b-none margin-o-1 margin-r-auto f-s-s">
 					<i class="fa fa-phone f-s-l" aria-hidden="true"></i>
-					<a href="tel" class="giallo">+39 0573.100004</a>
+					<a href="tel" class="giallo">+39 0573 400001</a>
 				</p>
 
 				<ul class="social-list">
