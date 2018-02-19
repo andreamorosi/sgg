@@ -20,6 +20,7 @@ get_header();
             </div>
 
             <div class="col-sm-12 offset-sm-0 col-md-6 offset-md-3 text-center">
+
                 <p class="margin-v-2">
                 L’animatore è un volontario che, dopo un
                 percorso di formazione in linea con il Progetto
@@ -39,128 +40,30 @@ get_header();
             </div>
 
             <div class="col-12 animatori-inner">
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Alberto_1.png">
-                    <span class="pacifico">Alberto</span>
-                </figure>
+                <?php
 
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Alessio_1.png">
-                    <span class="pacifico">Alessio</span>
-                </figure>
+                $args = array (
+                    'post_type'              => 'animatore',
+                    'orderby'                => 'meta_value',
+                    'order'                  => 'ASC',
+                    'posts_per_page' => -1
+                );
 
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Alice_1.png">
-                    <span class="pacifico">Alice</span>
-                </figure>
+                $animatori = new WP_Query($args);
 
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Amanda_1.png">
-                    <span class="pacifico">Amanda</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Antr_1.png">
-                    <span class="pacifico">Antr</span>
-                </figure>
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Bova_1.png">
-                    <span class="pacifico">Bova</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Camilla_1.png">
-                    <span class="pacifico">Camilla</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Davide_1.png">
-                    <span class="pacifico">Davide</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Elena_1.png">
-                    <span class="pacifico">Elena</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Francesca_1.png">
-                    <span class="pacifico">Francesca</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Giacomo_1.png">
-                    <span class="pacifico">Giacomo</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Giulia_1.png">
-                    <span class="pacifico">Giulia</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Jonny_1.png">
-                    <span class="pacifico">Jonny</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Luca_1.png">
-                    <span class="pacifico">Luca</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Luisa_1.png">
-                    <span class="pacifico">Luisa</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Manfredi_1.png">
-                    <span class="pacifico">Manfredi</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Marcaiello_1.png">
-                    <span class="pacifico">Marcaiello</span>
-                </figure>
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Marco_1.png">
-                    <span class="pacifico">Marco</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Marta_1.png">
-                    <span class="pacifico">Marta</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Martina_1.png">
-                    <span class="pacifico">Martina</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Matte G_1.png">
-                    <span class="pacifico">Matteo G</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Matteo U_1.png">
-                    <span class="pacifico">Matteo U</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Noemi_1.png">
-                    <span class="pacifico">Noemi</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Sasha_1.png">
-                    <span class="pacifico">Sasha</span>
-                </figure>
-
-                <figure class="animatori-item">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/img/animatori/Susanna_1.png">
-                    <span class="pacifico">Susanna</span>
-                </figure>
+                if ( $animatori->have_posts() ) {
+                    while ( $animatori->have_posts() ) {
+                        $animatori->the_post();
+                        ?>
+                        <figure class="animatori-item">
+                            <img class="" src="<?php echo the_post_thumbnail_url(); ?>">
+                            <span class="pacifico"><?php echo the_title_attribute(); ?></span>
+                        </figure>
+                        <?php
+                    }
+                    wp_reset_postdata();
+                }
+                ?>
             </div>
         </div>
     </div>
