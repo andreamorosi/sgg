@@ -28,121 +28,57 @@ Durante il campo estivo i ragazzi vivono insieme tutti i momenti della giornata,
             </div>
 
             <div class="col-12 campi-inner">
-                    <div class="campi-card">
-                        <div class="campi-card--header">
-                            <h4 class="pacifico">Campo Elementari</h4>
-                            <h5>Bambini dai 7 agli 11 anni</h5>
-                        </div>
-                        <ul class="campi-card--main">
-                            <li class="campi-card--info">
-                                <span>Giorni</span>
-                                <p>
-                                    24-30 Luglio 2017
-                                </p>
-                            </li>
-                            <li class="campi-card--info">
-                                <span>Località</span>
-                                <p>
-                                    Cavallico
-                                </p>
-                            </li>
-                            <li class="campi-card--info">
-                                <span>info3</span>
-                                <p>
-                                    Info 3
-                                </p>
-                            </li>
-                            <li class="campi-card--info">
-                                <span>info4</span>
-                                <p>
-                                    Info 4
-                                </p>
-                            </li>
-                        </ul>
-                        <div class="campi-card--footer">
-                            <p>Altre Info</p>
-                            <p class="campi-animatore">Susanna 333333333</p>
-                            <a href="" class="btn">Scrivici</a>
-                        </div>
-                </div>
 
 
-                    <div class="campi-card">
-                        <div class="campi-card--header">
-                            <h4 class="pacifico">Campo Medie</h4>
-                            <h5>Bambini dai 7 agli 11 anni</h5>
-                        </div>
-                        <ul class="campi-card--main">
-                            <li class="campi-card--info">
-                                <span>Giorni</span>
-                                <p>
-                                    24-30 Luglio 2017
-                                </p>
-                            </li>
-                            <li class="campi-card--info">
-                                <span>Località</span>
-                                <p>
-                                    Cavallico
-                                </p>
-                            </li>
-                            <li class="campi-card--info">
-                                <span>info3</span>
-                                <p>
-                                    Info 3
-                                </p>
-                            </li>
-                            <li class="campi-card--info">
-                                <span>info4</span>
-                                <p>
-                                    Info 4
-                                </p>
-                            </li>
-                        </ul>
-                        <div class="campi-card--footer">
-                            <p>Altre Info</p>
-                            <p class="campi-animatore">Susanna 333333333</p>
-                            <a href="" class="btn verde">Scrivici</a>
-                        </div>
-                </div>
+                    <?php
 
+                    $args = array (
+                        'post_type'              => 'campo',
+                        'orderby'                => 'meta_value',
+                        'order'                  => 'ASC',
+                        'posts_per_page' => -1
+                    );
 
-                    <div class="campi-card">
-                        <div class="campi-card--header">
-                            <h4 class="pacifico">Campo Superiori</h4>
-                            <h5>Bambini dai 7 agli 11 anni</h5>
-                        </div>
-                        <ul class="campi-card--main">
-                            <li class="campi-card--info">
-                                <span>Giorni</span>
-                                <p>
-                                    24-30 Luglio 2017
-                                </p>
-                            </li>
-                            <li class="campi-card--info">
-                                <span>Località</span>
-                                <p>
-                                    Cavallico
-                                </p>
-                            </li>
-                            <li class="campi-card--info">
-                                <span>info3</span>
-                                <p>
-                                    Info 3
-                                </p>
-                            </li>
-                            <li class="campi-card--info">
-                                <span>info4</span>
-                                <p>
-                                    Info 4
-                                </p>
-                            </li>
-                        </ul>
-                        <div class="campi-card--footer">
-                            <p>Altre Info</p>
-                            <p class="campi-animatore">Susanna 333333333</p>
-                            <a href="" class="btn rosso">Scrivici</a>
-                        </div>
-                </div>
+                    $campiestivi = new WP_Query($args);
+
+                    if ( $campiestivi->have_posts() ) {
+                        while ( $campiestivi->have_posts() ) {
+                            $campiestivi->the_post();
+                            ?>
+
+                            <div class="campi-card">
+                                <div class="campi-card--header">
+                                    <h4 class="pacifico"><?php echo the_title_attribute(); ?></h4>
+                                    <h5><?php echo get_field('descrizione_breve'); ?></h5>
+                                </div>
+                                <ul class="campi-card--main">
+                                    <li class="campi-card--info">
+                                        <span>Giorni</span>
+                                        <p><?php echo get_field('giorni'); ?></p>
+                                    </li>
+                                    <li class="campi-card--info">
+                                        <span>Località</span>
+                                        <p><?php echo get_field('localita'); ?></p>
+                                        <a href="<?php echo get_field('link_google_maps'); ?>" target="_blank" rel="nofollow">
+                                            <i class="fa fa-map-marker"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="campi-card--footer">
+                                    <p>Altre Info</p>
+                                    <p class="campi-animatore">
+                                        <?php echo get_field('nome_animatore'); ?>
+                                        <?php echo get_field('telefono_animatore'); ?>
+                                    </p>
+                                    <a href="" class="btn">Scrivici</a>
+                                </div>
+                            </div>
+                            <?php
+
+                        }
+                        wp_reset_postdata();
+                    }
+                    ?>
             </div>
 
             
